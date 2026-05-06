@@ -11,6 +11,7 @@ function filterEvenNumbers(inputNumbers: number[]): number[] {
 
 // --------------------------------Solve-------------------------
 
+
 // Problem 2:   reverseString
 
 
@@ -22,7 +23,28 @@ function reverseString(text: MyInputString): string {
 
 // const result = reverseString("typescript");
 
-console.log(`"${reverseString("typescript")}"`);
+// console.log(`"${reverseString("typescript")}"`);
 
 // ---------------------------solve-------------------------------
+
+// problem :3   Cheak  a input is string or number
+
+
+type StringOrNumber= string | number;
+
+
+const checkType=(myInput:StringOrNumber)=>{
+    if(typeof myInput === 'string'){
+        return '"String"';
+
+    }else if(typeof myInput==='number'){
+        return '"Number"';
+    }
+
+}
+//  console.log(checkType('aminul'));
+
+// ---------------------solve-------------------------------
+
+
 

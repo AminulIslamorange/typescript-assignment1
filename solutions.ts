@@ -1,15 +1,28 @@
 //  Problem 1:find Even Number
 
 
-function filterEvenNumbers(numbers: number[]): number[] {
-    return numbers.filter((num) => num % 2 === 0);
+function filterEvenNumbers(inputNumbers: number[]): number[] {
+    return inputNumbers.filter((num) => num % 2 === 0);
 }
-console.log(filterEvenNumbers([1, 15, 3, 59, 99, 4, 5, 6]));
+// console.log(filterEvenNumbers([1, 15, 3, 59, 99, 4, 5, 6,10]));
 
 // const evenNumbers=filterEvenNumbers([1, 2, 3, 4, 5, 6,10,11,12,50]);
 // console.log (evenNumbers);
 
 // --------------------------------Solve-------------------------
 
+// Problem 2:   reverseString
 
+
+type MyInputString = string;
+
+function reverseString(text: MyInputString): string {
+    return text.split("").reverse().join("");
+};
+
+// const result = reverseString("typescript");
+
+console.log(`"${reverseString("typescript")}"`);
+
+// ---------------------------solve-------------------------------
 

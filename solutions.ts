@@ -63,12 +63,32 @@ const getProperty=<X,K extends keyof X>(obj:X,key:K):X[K]=>{
 
 const user = { id: 1, name: "aminul", age: 29 };
 const result = getProperty(user, 'name')
-console.log(`"${result}";`);
+// console.log(`"${result}";`);
 
             // ------------------Solve----------------------
 
 
-// Problem 5:            
+// Problem 5:    
+
+
+interface Book {
+    title: string;
+    author: string;
+    publishedYear: number;
+   
+}
+const toggleReadStatus=(myBook:Book)=>{
+    return{
+        ...myBook,
+        isRead:true
+    }
+};
+
+const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2024 };
+
+const finisedRead=toggleReadStatus(myBook);
+//  console.log(finisedRead);
+
 
 
 

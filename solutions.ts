@@ -89,8 +89,68 @@ const myBook = { title: "TypeScript Guide", author: "Jane Doe", publishedYear: 2
 const finisedRead=toggleReadStatus(myBook);
 //  console.log(finisedRead);
 
+   // -------------------solve---------------------
 
 
+//    Problem :6
+
+
+// class Person {
+//     name: string;
+//     age: number;
+//      constructor(name:string, age:number){
+        
+//         this.name=name;
+//         this.age=age
+//     }
+   
+// }
+// class Student extends Person {
+//     grade:string;
+//     constructor(name:string,age:number,grade:string)
+//     {
+//         super(name,age)
+//         this.grade=grade
+//     }
+//      getDetails(grade:string){
+//         console.log(`"Name:${this.name},Age: ${this.age},Grade: ${grade}"`)
+        
+
+//     }
+// }
+
+// const student = new Student("Alice", 20, 'A' );
+// console.log(student)
+
+
+class Person {
+    name: string;
+    age: number;
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+class Student extends Person {
+    grade: string;
+    constructor(name: string, age: number, grade: string) {
+        super(name, age);
+        this.grade = grade;
+    }
+
+   getDetails():string {
+        return`"Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}"`;
+    }
+}
+
+const student = new Student("aminul", 26, 'A-');
+console.log( student.getDetails());
+
+
+                            //  -------------solve------------------------
+
+Probelem:7
 
 
 

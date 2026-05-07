@@ -152,6 +152,37 @@ console.log( student.getDetails());
 
 Probelem:7
 
+// class ArrayInput {
+//     array1: number[];
+//     array2: number[]; 
+
+//     constructor(firstArry: number[], secondArry :number[]) {
+//         this.array1 = firstArry;
+//         this.array2 = secondArry;
+//     }
+//     get getIntersection(): number[] {
+//         return this.array1.filter(item => this.array2.includes(item));
+//     }
+// }
+
+// const intersectionResult= new ArrayInput([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]);
+
+
+// console.log(intersectionResult.getIntersection);
+
+                                    //   Or 
+
+    function getIntersection(array1: number[], array2: number[]): number[] {
+      
+        return array1.filter(item => array2.includes(item));
+    }
+     const result2 = getIntersection([1, 2, 3, 4, 5,12], [3, 4, 5,12, 6, 7]);
+
+    
+    console.log(result2); 
+   
+
+
 
 
 

@@ -30,21 +30,48 @@ function reverseString(text: MyInputString): string {
 // problem :3   Cheak  a input is string or number
 
 
-type StringOrNumber= string | number;
+type StringOrNumber = string | number;
 
 
-const checkType=(myInput:StringOrNumber)=>{
-    if(typeof myInput === 'string'){
+const checkType = (myInput: StringOrNumber) => {
+    if (typeof myInput === 'string') {
         return '"String"';
 
-    }else if(typeof myInput==='number'){
+    } else if (typeof myInput === 'number') {
         return '"Number"';
     }
 
 }
+// console.log(JSON.stringify(checkType("Hello")));
 //  console.log(checkType('aminul'));
 
 // ---------------------solve-------------------------------
+
+
+// problem:4 
+
+type User = {
+    id: number;
+    name: string;
+    age: number;
+
+}
+
+const getProperty=<X,K extends keyof X>(obj:X,key:K):X[K]=>{
+    return obj[key];
+};
+
+const user = { id: 1, name: "aminul", age: 29 };
+const result = getProperty(user, 'name')
+console.log(`"${result}";`);
+
+            // ------------------Solve----------------------
+
+
+// Problem 5:            
+
+
+
 
 
 
